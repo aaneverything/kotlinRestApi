@@ -1,0 +1,64 @@
+POST  http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "A002",
+  "name" : "bapak kau kiper",
+  "price": 30000000,
+  "quantity": 10
+}
+
+### post salah
+
+POST  http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+"id": "",
+"name" : "",
+"price": 0,
+"quantity": 0
+}
+
+
+### get benar
+GET http://localhost:8080/api/products/A001
+Content-Type: application/json
+
+
+### get salah
+GET http://localhost:8080/api/products/A00
+Content-Type: application/json
+
+
+### update benar
+
+PUT http://localhost:8080/api/products/A002
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "mamak kau sekarang",
+  "price": 9000,
+  "quantity": 11
+}
+
+### update salah
+
+PUT http://localhost:8080/api/products/A00
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "mamak kau sekarang",
+  "price": 9000,
+  "quantity": 11
+}
+
+
+### delete oh oh
+
+DELETE http://localhost:8080/api/products/A001
+Accept: application/json

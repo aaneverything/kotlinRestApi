@@ -1,4 +1,4 @@
-package programmer.zaman.now.kotlin.restful.model
+package aantrvn.kotlinRestfulApi.model
 
 data class WebResponse<T>(
 
